@@ -1,0 +1,19 @@
+arr=[1,2,3,4]
+#traversal counter
+i=0
+#boolean value if found similar values
+b=False
+
+#Array traversal Loop/OUTER LOOP
+while i<=len(arr)-1:
+     j=i+1
+#Inner LOOP
+     while j<=len(arr)-1:
+         if (arr[i]==arr[j]):
+            b=True
+         j+=1    
+     i+=1
+if (b==True):
+    print("true")
+else:
+    print("false")
